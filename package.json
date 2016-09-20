@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tape test/**/*.js",
-    "vendor": "git clone https://github.com/orlp/ed25519.git vendor",
+    "vendor": "git clone https://github.com/luca3104/ed25519.git vendor",
     "build": "node build.js"
   },
   "repository": {
