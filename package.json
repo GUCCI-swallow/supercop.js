@@ -1,7 +1,7 @@
 {
   "name": "supercop.js",
   "version": "2.0.1",
-  "description": "orlp/ed25519 compiled to pure javascript using Emscripten",
+  "description": "luca3104/ed25519 compiled to pure javascript using Emscripten",
   "main": "index.js",
   "scripts": {
     "test": "tape test/**/*.js",
