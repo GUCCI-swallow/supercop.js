@@ -6,7 +6,8 @@
   "scripts": {
     "test": "tape test/**/*.js",
     "vendor": "git clone https://github.com/luca3104/ed25519.git vendor",
-    "build": "node build.js"
+    "build": "node build.js",
+    "dist": "gulp dist"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,12 @@
   },
   "homepage": "https://github.com/1p6/supercop.js#readme",
   "devDependencies": {
+    "browserify": "^13.1.1",
     "glob": "^7.0.3",
-    "tape": "^4.5.1"
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^2.0.0",
+    "tape": "^4.5.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

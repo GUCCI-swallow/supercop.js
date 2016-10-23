@@ -1,5 +1,5 @@
 # supercop.js
-[orlp/ed25519](https://github.com/orlp/ed25519) compiled to pure javascript using Emscripten
+[luca3104/ed25519](https://github.com/luca3104/ed25519) compiled to pure javascript using Emscripten
 
 # example
 ## signing and verifying stuff
