@@ -27,9 +27,10 @@ exports.createKeyPair = function(seed){
 }
 
 exports.sign = function(msg, pubKey, privKey){
-  if(!Buffer.isBuffer(msg) || !Buffer.isBuffer(pubKey) || !Buffer.isBuffer(privKey)){
-    throw new Error('not buffers!')
-  }
+  msg = new Buffer(msg);
+  pubKey = new Buffer(pubKey, 'base64');
+  privKey = new Buffer(privKey, 'base64');
+
   var msgLen = msg.length
   var msgArrPtr = Module._malloc(msgLen)
   var msgArr = new Uint8Array(Module.HEAPU8.buffer, msgArrPtr, msgLen)
@@ -51,9 +52,10 @@ exports.sign = function(msg, pubKey, privKey){
 }
 
 exports.verify = function(sig, msg, pubKey){
-  if(!Buffer.isBuffer(msg) || !Buffer.isBuffer(sig) || !Buffer.isBuffer(pubKey)){
-    throw new Error('not buffers!')
-  }
+  sig = new Buffer(sig, 'base64');
+  pubKey = new Buffer(pubKey, 'base64');
+  msg = new Buffer(msg);
+
   var msgLen = msg.length
   var msgArrPtr = Module._malloc(msgLen)
   var msgArr = new Uint8Array(Module.HEAPU8.buffer, msgArrPtr, msgLen)
