@@ -2,7 +2,7 @@
   "name": "supercop.js",
   "version": "2.0.1",
   "description": "luca3104/ed25519 compiled to pure javascript using Emscripten",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "tape test/**/*.js",
     "vendor": "git clone https://github.com/luca3104/ed25519.git vendor",
@@ -18,7 +18,7 @@
     "supercop",
     "signature"
   ],
-  "author": "1p6",
+  "author": "1p6, GUCCI-swallow",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/1p6/supercop.js/issues"

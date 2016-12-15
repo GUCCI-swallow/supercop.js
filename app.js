@@ -1,1 +1,1 @@
-global.supercop = require('./index.js');
+module.exports = require('./index.js');
