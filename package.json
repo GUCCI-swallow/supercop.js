@@ -2,7 +2,7 @@
   "name": "supercop.js",
   "version": "2.0.1",
   "description": "luca3104/ed25519 compiled to pure javascript using Emscripten",
-  "main": "app.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "tape test/**/*.js",
     "vendor": "git clone https://github.com/luca3104/ed25519.git vendor",
